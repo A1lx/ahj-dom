@@ -1,0 +1,20 @@
+.field {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+
+.field-part {
+  width: 25%;
+  height: 25%;
+  background-color: brown;
+  background-image: url('..\img\goblin.png');
+  outline: 1px solid black;
+}
+
+/* .goblin {
+
+} */
