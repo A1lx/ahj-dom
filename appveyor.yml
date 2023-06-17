@@ -21,7 +21,7 @@ test_script:
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
-  - git config --global A1lx AppVeyor
-  - git config --global alx111wrk@gmail.com ci@appveyor.com
+  - git config --global A1lx
+  - git config --global alx111wrk@gmail.com
   - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - npx push-dir --dir=dist --branch=gh-pages --force --verbose
