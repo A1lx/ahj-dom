@@ -10,10 +10,11 @@
 .field-part {
   width: 25%;
   height: 25%;
-  background-color: brown;
+  background-color: rgb(150, 165, 64);
   outline: 1px solid black;
 }
 
-/* .goblin {
-
-} */
+.active_field-part {
+  background-image: url('../img/goblin.png');
+  background-size: 100%;
+}
