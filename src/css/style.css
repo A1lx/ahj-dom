@@ -17,4 +17,11 @@
 .active_field-part {
   background-image: url('../img/goblin.png');
   background-size: 100%;
+  cursor: url('../img/hammer.png'), pointer;
+}
+
+.game-info {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
 }
