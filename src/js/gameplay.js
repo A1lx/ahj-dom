@@ -3,6 +3,8 @@ import paintGoblin from './paintGoblin';
 export default function gameplay() {
   const fieldParts = [...document.querySelectorAll('.field-part')];
 
+  let intervalId = setInterval(paintGoblin, 1000);
+
   let hit = 0;
   let miss = 0;
 
@@ -14,7 +16,10 @@ export default function gameplay() {
         hitInfo.innerHTML = `
         <span class="game-info-text hit-info">Попаданий: ${hit}</span>
         `;
-        paintGoblin();
+        // перезапуск интервала
+        clearInterval(intervalId);
+        document.querySelector('.active_field-part').classList.remove('active_field-part');
+        intervalId = setInterval(paintGoblin, 1000);
       } else {
         miss++;
         const missInfo = document.querySelector('.miss-info');
