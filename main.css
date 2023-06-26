@@ -1,0 +1,27 @@
+.field {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+
+.field-part {
+  width: 25%;
+  height: 25%;
+  background-color: rgb(150, 165, 64);
+  outline: 1px solid black;
+}
+
+.active_field-part {
+  background-image: url(2dbd01ce16c0fa83cb67.png);
+  background-size: 100%;
+  cursor: url(03f73570e8493797c090.png), pointer;
+}
+
+.game-info {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
